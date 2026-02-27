@@ -57,16 +57,16 @@ jobs:
           # AI 配置
           # ==========================================
           # Gemini AI（主选）
-          GEMINI_API_KEY: AIzaSyCfZedHIS-6ygw4Jtr-1Xc5P-ZwI2dyTgE
+          GEMINI_API_KEY: 
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini-3-flash-preview' }}
           GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini-2.5-flash' }}
           GEMINI_REQUEST_DELAY: '3.0'
           
           # AIHubMix（优先于 OPENAI_API_KEY，自动适配 base_url，推荐国内用户）
-          AIHUBMIX_KEY: sk-redDRnGo3tDZfXcy69Bb6778D8Ff4519BcE81fD8Ba943f85
+          AIHUBMIX_KEY: 
 
           # OpenAI 兼容 API（备选）
-          OPENAI_API_KEY: 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
+          OPENAI_API_KEY: 
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
 
@@ -77,7 +77,7 @@ jobs:
           # ==========================================
           # 数据源
           # ==========================================
-          TUSHARE_TOKEN: 1724ee74a268e08fa3ee80e70a88dfea8fb3aba7372b07397f0e983d
+          TUSHARE_TOKEN: 
           
           # ==========================================
           # 搜索服务
@@ -91,7 +91,7 @@ jobs:
           # ==========================================
           
           # 方式一：企业微信 Webhook
-          WECHAT_WEBHOOK_URL: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=69fa79b7-d8ff-42e8-a207-59a7b3e8e387
+          WECHAT_WEBHOOK_URL: 
           WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
