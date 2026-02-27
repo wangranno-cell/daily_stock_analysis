@@ -57,7 +57,7 @@ jobs:
           # AI 配置
           # ==========================================
           # Gemini AI（主选）
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: AIzaSyCfZedHIS-6ygw4Jtr-1Xc5P-ZwI2dyTgE
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini-3-flash-preview' }}
           GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini-2.5-flash' }}
           GEMINI_REQUEST_DELAY: '3.0'
@@ -66,7 +66,7 @@ jobs:
           AIHUBMIX_KEY: sk-redDRnGo3tDZfXcy69Bb6778D8Ff4519BcE81fD8Ba943f85
 
           # OpenAI 兼容 API（备选）
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: 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
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
 
