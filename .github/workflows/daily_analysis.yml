@@ -77,13 +77,13 @@ jobs:
           # ==========================================
           # 数据源
           # ==========================================
-          TUSHARE_TOKEN: ${{ secrets.TUSHARE_TOKEN }}
+          TUSHARE_TOKEN: 1724ee74a268e08fa3ee80e70a88dfea8fb3aba7372b07397f0e983d
           
           # ==========================================
           # 搜索服务
           # ==========================================
           BOCHA_API_KEYS: ${{ secrets.BOCHA_API_KEYS }}
-          TAVILY_API_KEYS: ${{ secrets.TAVILY_API_KEYS }}
+          TAVILY_API_KEYS: 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
           SERPAPI_API_KEYS: ${{ secrets.SERPAPI_API_KEYS }}
           
           # ==========================================
@@ -91,7 +91,7 @@ jobs:
           # ==========================================
           
           # 方式一：企业微信 Webhook
-          WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
+          WECHAT_WEBHOOK_URL: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=69fa79b7-d8ff-42e8-a207-59a7b3e8e387
           WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
